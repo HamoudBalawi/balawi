@@ -1,0 +1,111 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #e8eff5;
+}
+.body-wrapper {
+  flex: 1 0 auto;
+}
+i {
+  position: absolute;
+  font-size: 300px;
+  color: #eff6fc;
+  animation: moving 30s ease-in-out infinite;
+  z-index: -1;
+}
+.second {
+  animation: moving 50s ease-in-out infinite;
+  z-index: -1;
+}
+@keyframes moving {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(1350px);
+  }
+}
+h1 {
+  position: relative;
+  top: 400px;
+}
+.home,
+.about,
+.contact {
+  height: 850px;
+}
+.web-cards {
+  max-width: 300px;
+  margin: 0 10px;
+  padding: 0;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+.web-cards img {
+  max-width: 100%;
+  border-radius: 30px 30px 0 0;
+  padding: 0;
+}
+.web-cards h3 {
+  border-radius: 0 0 2px 2px;
+  padding: 5px 0;
+}
+.git-link {
+  max-width: 280px;
+  height: 50px;
+  background-color: #bebebe;
+}
+.profile-text {
+  max-width: 440px;
+}
+.profile {
+  max-width: 500px;
+}
+.profile img {
+  width: 100%;
+  border-radius: 10px;
+}
+form {
+  max-width: 900px;
+}
+#name {
+  width: 300px;
+}
+#email {
+  max-width: 500px;
+}
+#subject {
+  max-width: 700px;
+}
+.btn-primary {
+  color: $accent-color !important;
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+}
+.btn-primary:hover {
+  background-color: $secondary-color !important;
+  border-color: $secondary-color !important;
+  color: $white !important;
+}
+
+/* Smaller screens */
+
+@media (max-width: 576px) {
+  .carousel-item h1 {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .exclusive-item .exlusive-item-img,
+  .exclusive-item .exlusive-item-details {
+    max-width: 100%;
+  }
+}
