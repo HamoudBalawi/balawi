@@ -8,38 +8,54 @@ body {
   flex-direction: column;
   margin: 0 auto;
   background-color: #e8eff5;
+  position: relative;
 }
 .body-wrapper {
   flex: 1 0 auto;
 }
-i {
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 25px;
+}
+.first,
+.second,
+.third {
   position: absolute;
-  font-size: 300px;
-  color: #eff6fc;
-  animation: moving 30s ease-in-out infinite;
+  width: 300px;
+  height: 300px;
+  background-color: #eff6fc;
+  border-radius: 50%;
   z-index: -1;
 }
 .second {
-  animation: moving 50s ease-in-out infinite;
+  width: 400px;
+  height: 400px;
+  top: 330px;
+  left: 70px;
   z-index: -1;
 }
-@keyframes moving {
-  0% {
-    transform: translateX(-100px);
-  }
-
-  100% {
-    transform: translateX(1350px);
-  }
+.third {
+  top: 200px;
+  right: 300px;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
 }
+
 h1 {
   position: relative;
   top: 400px;
 }
+h2 {
+  margin-left: 20px;
+}
+.name {
+  color: #98a2a8;
+}
 .home,
 .about,
 .contact {
-  height: 850px;
+  height: 1200px;
 }
 .web-cards {
   max-width: 300px;
@@ -61,30 +77,24 @@ h1 {
 .git-link {
   max-width: 280px;
   height: 50px;
-  background-color: #bebebe;
+  background-color: #69d9f1;
+  border-radius: 5px;
 }
 .profile-text {
-  max-width: 440px;
+  padding-left: 30px;
+  padding-top: 100px;
+  max-width: 550px;
+  line-height: 50px;
 }
+
 .profile {
-  max-width: 500px;
+  max-width: 750px;
 }
 .profile img {
   width: 100%;
   border-radius: 10px;
 }
-form {
-  max-width: 900px;
-}
-#name {
-  width: 300px;
-}
-#email {
-  max-width: 500px;
-}
-#subject {
-  max-width: 700px;
-}
+
 .btn-primary {
   color: $accent-color !important;
   background-color: $primary-color !important;
@@ -95,17 +105,76 @@ form {
   border-color: $secondary-color !important;
   color: $white !important;
 }
+form {
+  max-width: 900px;
+  margin: 80x auto;
+}
+input,
+textarea {
+  border-radius: 2px;
+  background-color: #69d9f1;
+}
+#name {
+  width: 300px;
+}
+#email {
+  max-width: 500px;
+}
+#subject {
+  max-width: 700px;
+}
+
+.validation-error {
+  display: none;
+  color: red;
+  text-align: center;
+}
+#success {
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin: 0px auto;
+  padding: 5px;
+  color: green;
+  font-size: 20px;
+}
 
 /* Smaller screens */
 
-@media (max-width: 576px) {
-  .carousel-item h1 {
-    font-size: 25px;
-    width: 100%;
+@media (max-width: 700px) {
+  .web-cards {
+    margin: 10px 0px;
+  }
+  .git-link {
+    margin: 10px 0;
+  }
+  .home {
+    max-height: 600px;
+  }
+  .first {
+    max-width: 200px;
+    height: 200px;
+    top: 30px;
+    left: 0px;
+  }
+  .second {
+    max-width: 300px;
+    height: 300px;
+    top: 230px;
+    left: 30px;
+  }
+  .third {
+    max-width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 20px;
   }
 
-  .exclusive-item .exlusive-item-img,
-  .exclusive-item .exlusive-item-details {
-    max-width: 100%;
+  h1 {
+    top: 150px;
+  }
+  .about,
+  .contact {
+    max-height: 900px;
   }
 }
