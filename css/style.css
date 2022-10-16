@@ -89,6 +89,10 @@ h2 {
   height: 1200px;
 }
 
+.portfolio {
+  margin-bottom: 200px;
+}
+
 .web-cards {
   max-width: 400px;
   margin: 0 10px;
@@ -249,6 +253,9 @@ textarea {
 }
 
 @media (max-width: 400px) {
+  .portfolio {
+    margin-bottom: 0px;
+  }
   .cards .web-cards {
     max-width: 320px;
   }

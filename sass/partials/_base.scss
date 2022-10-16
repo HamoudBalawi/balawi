@@ -54,8 +54,11 @@ h2 {
 }
 .home,
 .about,
-.contact {
+.contact{
   height: 1200px;
+}
+.portfolio {
+  margin-bottom: 200px;
 }
 .web-cards {
   max-width: 400px;
@@ -199,6 +202,9 @@ textarea {
 
 // Mobile screens
 @media (max-width: 400px) {
+.portfolio {
+  margin-bottom: 0px;
+}
     .cards .web-cards {
       max-width: 320px;
     }
