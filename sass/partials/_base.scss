@@ -196,3 +196,13 @@ textarea {
     max-height: 900px;
   }
 }
+
+// Mobile screens
+@media (max-width: 400px) {
+    .cards .web-cards {
+      max-width: 320px;
+    }
+.card-image {
+  height: 330px;
+}
+}

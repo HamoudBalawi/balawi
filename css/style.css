@@ -248,6 +248,15 @@ textarea {
   }
 }
 
+@media (max-width: 400px) {
+  .cards .web-cards {
+    max-width: 320px;
+  }
+  .card-image {
+    height: 330px;
+  }
+}
+
 .shoppingcart-items {
   border: 1px solid #535b68;
   border-radius: 2px;
