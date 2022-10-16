@@ -254,7 +254,7 @@ textarea {
 
 @media (max-width: 400px) {
   .portfolio {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .cards .web-cards {
     max-width: 320px;
