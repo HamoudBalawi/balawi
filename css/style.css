@@ -255,6 +255,13 @@ textarea {
   .card-image {
     height: 330px;
   }
+  .profile {
+    max-width: 320px;
+  }
+  form {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .shoppingcart-items {
